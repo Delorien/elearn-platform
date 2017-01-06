@@ -1,0 +1,79 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+
+.lesson-sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.lesson-sidenav header {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-size: 100%;
+}
+
+.lesson-sidenav header .open-close-button {
+    border: 0;
+    background-color: #FFFFFF;
+    /*background-image: url(/images/gnarus/classPage/icon-menu-close.svg);*/
+    background-repeat: no-repeat;
+    height: 38px;
+    width: 38px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    outline: 0;
+    cursor: pointer;
+    font-size: 30px;
+    background-size: 100%;
+}
+
+.lesson-sidenav-body .course-name {
+    color: #111;
+    background-color: #DCDCDC;
+    padding: 2px 2px 2px 40px;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 12px; 
+}
+
+.lesson-sidenav-body a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    margin-left: 32px;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.lesson-sidenav-body a:hover, .offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+.lesson-main {
+    transition: margin-left .5s;
+    margin-left: 250px;
+}
+
+.lesson-main header {
+    background: #edf1f2;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media screen and (max-height: 450px) {
+  .lesson-sidenav {padding-top: 15px;}
+  .lesson-sidenav-body a {font-size: 18px;}
+}
